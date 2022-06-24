@@ -1,0 +1,28 @@
+body {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-grow: 1;
+    background-image: url("resources/queb.jpg");
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .logo{
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    color: brown;
+    border-style: dotted;
+    border-color: brown;
+    border-width: 4px;
+}
+aside div img {
+    width: 5rem;    
+}
+main {
+    flex-grow: 1.75;
+}
