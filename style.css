@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Norse-Bold;
+    src:    local("Norse-Bold"),
+            url(resources/Norse-Bold.otf);
+}
+
 body {
     display: flex;
 }
@@ -5,8 +11,10 @@ body {
 aside {
     display: flex;
     flex-grow: 1;
+    /* flex-basis: 100%; */
     background-image: url("resources/queb.jpg");
-    height: 80vh;
+    background-size: cover;
+    height: 95vh;
     justify-content: center;
     align-items: center;
 }
@@ -14,15 +22,22 @@ aside {
 aside .logo{
     display: flex;
     align-items: center;
-    font-size: 4rem;
-    color: brown;
-    border-style: dotted;
-    border-color: brown;
-    border-width: 4px;
+    font-size: 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem 8rem;
 }
+
 aside div img {
     width: 5rem;    
 }
+
+aside .logo div {
+    font-family: "Norse-Bold";
+}
+
 main {
-    flex-grow: 1.75;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding: 3rem 9rem 3rem 3rem;
 }
