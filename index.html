@@ -15,9 +15,11 @@
         </div>
     </aside>
     <main>
-        <p>This is not a real online service! You know you need something like this in your life 
-            to realize your deepest dreams. Sign up <em>now</em> to get started!<br><br>
-            You <em>know </em>you want to.</p>
+        <div class="description">
+            <p>This is not a real online service! You know you need something like this in your life 
+                to realize your deepest dreams. Sign up <em>now</em> to get started!<br><br>
+                You <em>know </em>you want to.</p>
+        </div>
         <p>Let's do this!</p>
         <form id="signupForm" action="nodi/signup" method="POST" autocomplete="on">
             <label for="name">FIRST NAME *</label>
@@ -39,7 +41,9 @@
             <input type="password" id="confirmPassword" name="confirmPassword" size=30 minlength="2" maxlength="25" required>
         </form>
         <p>* = Required fields</p>
-        <button form="signupForm" type="submit">Create Account</button>
+        <p>
+            <button form="signupForm" type="submit">Create Account</button>
+        </p>
         <p>Already have an account? <a href="#">Log in</a></p>
     </main>
 </body>
