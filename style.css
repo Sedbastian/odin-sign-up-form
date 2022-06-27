@@ -59,8 +59,44 @@ main p {
 }
 
 form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     font-size: 0.7rem;
     padding-left: 3rem;
     padding-right: 9rem;
     background-color: white;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+form input {
+    
+    border-style: solid;
+    border-color: #dddddd;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+}
+
+input:focus {
+    border-style: solid;
+    border-color: rgb(124, 124, 255);
+    border-width: 0.15rem;
+    outline-style: none;
+    box-shadow: 0.15rem 0.15rem .5rem rgb(150, 150, 150);
+}
+
+input.error {
+    border-style: solid;
+    border-color: rgb(192, 0, 0);
+    border-width: 0.10rem;
+    outline-style: none;
+}
+
+p.required {
+    font-size: 0.8rem;
 }
