@@ -109,12 +109,25 @@ input.error {
     outline-style: none;
 }
 
+input.correcta {
+    border-style: solid;
+    border-color: rgb(0, 192, 0);
+    border-width: 0.10rem;
+    outline-style: none;
+}
+
+.contrasenia::after {
+    content: '* Passwords do not match';
+    color: red;
+}
+
 .formulario {
     box-shadow: 0.15rem 0.15rem .5rem rgb(150, 150, 150);
 }
 
 p.required {
     font-size: 0.8rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
     margin-bottom: .3rem;
 }
