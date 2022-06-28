@@ -20,43 +20,49 @@
                 to realize your deepest dreams. Sign up <em>now</em> to get started!<br><br>
                 You <em>know </em>you want to.</p>
         </div>
-        <p>Let's do this!</p>
-        <form id="signupForm" action="nodi/signup" method="POST" autocomplete="on">
-            <div>
-                <label for="name">FIRST NAME *</label>
-                <input type="text" id="name" name="name" size=30 minlength="2" maxlength="25" required>
-            </div>
-
-            <div>
-                <label for="lastname">LAST NAME *</label>
-                <input type="text" id="lastname" name="lastname" size=30 minlength="2" maxlength="25" required>
-            </div>
-
-            <div>
-                <label for="email">EMAIL *</label>
-                <input type="email" id="email" name="email" size=30 required>
-            </div>
-
-            <div>
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" name="phone" size=30>
-            </div>
-
-            <div>
-                <label for="password">PASSWORD *</label>
-                <input type="password" id="password" class="error" name="password" size=30 minlength="2" maxlength="25" required>
-            </div>
-
-            <div>
-                <label for="confirmPassword">CONFIRM PASSWORD *</label>
-                <input type="password" id="confirmPassword" class="error" name="confirmPassword" size=30 minlength="2" maxlength="25" required>
-            </div>
-        </form>
-        <p class="required">* = Required fields</p>
-        <p>
-            <button form="signupForm" type="submit">Create Account</button>
-        </p>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <div class="formulario">
+            <form id="signupForm" action="nodi/signup" method="POST" autocomplete="on">
+                <legend>Let's do this!</legend>
+                <div class="inputs">
+                    <div>
+                        <label for="name">FIRST NAME *</label>
+                        <input type="text" id="name" name="name" size=30 minlength="2" maxlength="25" required>
+                    </div>
+        
+                    <div>
+                        <label for="lastname">LAST NAME *</label>
+                        <input type="text" id="lastname" name="lastname" size=30 minlength="2" maxlength="25" required>
+                    </div>
+        
+                    <div>
+                        <label for="email">EMAIL *</label>
+                        <input type="email" id="email" name="email" size=30 required>
+                    </div>
+        
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" size=30>
+                    </div>
+        
+                    <div>
+                        <label for="password">PASSWORD *</label>
+                        <input type="password" id="password" class="error" name="password" size=30 minlength="2" maxlength="25" required>
+                    </div>
+        
+                    <div>
+                        <label for="confirmPassword">CONFIRM PASSWORD *</label>
+                        <input type="password" id="confirmPassword" class="error" name="confirmPassword" size=30 minlength="2" maxlength="25" required>
+                    </div>
+                </div>
+            </form>
+            <p class="required">* = Required fields</p>
+        </div>
+        <div class="zonaBoton">
+            <p class="pDelBoton">
+                <button form="signupForm" type="submit" class="boton">Create Account</button>
+            </p>
+            <p class="already">Already have an account? <a href="#">Log in</a></p>
+        </div>
     </main>
 </body>
 </html>
